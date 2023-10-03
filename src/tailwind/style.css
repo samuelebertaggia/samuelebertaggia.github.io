@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply focus-visible:outline
+            outline-2 outline-green-800 dark:outline-green-200;
+  }
+}
+
+@layer utilities {
+  .bg {
+    @apply screen:bg-gray-200 screen:dark:bg-gray-800;
+  }
+
+  .bg-accent {
+    @apply screen:bg-orange-700 screen:dark:bg-orange-300;
+  }
+
+  .bg-hover {
+    @apply screen:hover:bg-gray-800 screen:hover:dark:bg-gray-200;
+  }
+
+  .border-primary {
+    @apply border-sky-800 dark:border-sky-300;
+  }
+
+  .text {
+    @apply screen:text-gray-800 screen:dark:text-gray-200;
+  }
+
+  .text-accent {
+    @apply screen:text-orange-50 screen:dark:text-orange-950;
+  }
+
+  .text-hover {
+    @apply screen:hover:text-gray-200 screen:hover:dark:text-gray-800;
+  }
+
+  .text-primary {
+    @apply screen:text-sky-700 screen:dark:text-sky-300;
+  }
+
+  .text-secondary {
+    @apply screen:text-green-800 screen:dark:text-green-300;
+  }
+}
